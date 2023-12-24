@@ -1,0 +1,22 @@
+/* Add these styles in your CSS file */
+.jobWord {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .highlightedStroke {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #000; /* Adjust color as needed */
+    transition: width 1s linear;
+  }
+  
+  .jobWord:hover + .highlightedStroke,
+  .jobWord:focus + .highlightedStroke {
+    width: 100%;
+    transition: width 1s linear;
+  }
+  
